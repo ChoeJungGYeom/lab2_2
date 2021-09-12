@@ -5,7 +5,7 @@ import java.util.Comparator;
 public class Fruit implements Comparable<Fruit>{
 	int no;
 	String name;
-	int age;
+	int price;
 	
 	public int compareTo(Fruit o)
 	{
@@ -17,27 +17,27 @@ public class Fruit implements Comparable<Fruit>{
 	public void setNo(int no) {
 		this.no = no;
 	}
-	public Fruit(int no, String name, int age) {
+	public Fruit(int no, String name, int price) {
 		super();
 		this.no = no;
 		this.name = name;
-		this.age = age;
+		this.price = price;
 	}
 	public String getName() {
 		return name;
 	}
 	@Override
 	public String toString() {
-		return "Fruit [no=" + no + ", name=" + name + ", age=" + age + "]";
+		return "Fruit [no=" + no + ", name=" + name + ", price=" + price + "]";
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getAge() {
-		return age;
+	public int getPrice() {
+		return price;
 	}
-	public void setAge(int age) {
-		this.age = age;
+	public void setPrice(int price) {
+		this.price = price;
 	};
 	
 }
